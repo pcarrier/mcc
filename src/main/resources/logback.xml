@@ -1,0 +1,16 @@
+<configuration>
+
+  <appender name="STDERR" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %level %logger{20-}: %msg%n</pattern>
+    </encoder>
+    <target>System.err</target>
+  </appender>
+
+  <root level="debug">
+    <appender-ref ref="STDERR" />
+  </root>
+
+  <logger name="com.google.code.yanf4j" level="INFO" />
+  <logger name="net.rubyeye.xmemcached" level="WARN" />
+</configuration>

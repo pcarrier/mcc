@@ -1,0 +1,20 @@
+mcc
+===
+
+Description
+-----------
+
+A simple memcached CLI tool. Reasonably designed to grow into a toolkit if anybody wants to spend time on it (very few efforts went into this).
+
+Features
+--------
+
+- dump: Dump all key+value pairs available in `stats cachedump` in a binary file.
+- TODO: Restore the key+value pairs into any set of servers (with support for xmemcached sharding).
+-
+
+dump
+~~~~
+
+On a standard `memcached`, the response to this command is limited to 2MB.
+However the implementation is quite optimized and should be able to scale to much larger responses.
